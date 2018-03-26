@@ -1,0 +1,22 @@
+<% include partials/header %>
+
+<h1><center>Movie Titles</center></h1>
+
+
+
+<% for(i=0; i < posts2.length ; i ++){ %>
+<li><%=posts2[i]   %></li>
+<% } %>
+
+<p> Using forEach </p>
+<% posts2.forEach(value => { %>
+      <li><%=value   %></li>
+<% }) %>
+
+<form action="/addPost" method="Post">
+    <input type="text" name="newPost" placeholder="name">
+    <button>I made a new post</button>
+</form>
+
+
+<% include partials/footer %>

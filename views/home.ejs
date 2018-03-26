@@ -1,0 +1,13 @@
+<% include partials/header %>
+
+<h1> This is the home page   <%= nameVar %> </h1>
+<!--  <%=   %>   everything in here is embedded javascript this helps display at html -->
+
+
+<!--   <%  %>  you use these when making condition like if and you dont want it to render it like as html-->
+<% if(nameVar === "James"){  %>
+<h1> Great Name</h1>
+
+<% } %>
+
+<% include partials/footer %>
